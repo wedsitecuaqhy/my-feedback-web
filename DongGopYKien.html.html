@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đóng góp ý kiến</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* KHUNG FORM */
+.container {
+  background: white;
+  padding: 28px 26px;
+  border-radius: 18px;
+  width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease;
+}
+
+/* TIÊU ĐỀ */
+.container h1 {
+  text-align: center;
+  margin-bottom: 6px;
+  color: #2c3e50;
+  font-size: 22px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 22px;
+}
+
+/* LABEL */
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* INPUT + TEXTAREA */
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 18px;
+  transition: 0.25s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5a7bd8;
+  box-shadow: 0 0 0 3px rgba(90,123,216,0.15);
+}
+
+/* NÚT */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #5a7bd8, #4867c3);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(72,103,195,0.4);
+}
+
+/* HỘP CẢM ƠN */
+#thankBox {
+  display: none;
+  text-align: center;
+}
+
+#thankBox h3 {
+  color: #5a7bd8;
+  margin-bottom: 10px;
+}
+
+#thankBox button {
+  margin-top: 15px;
+  background: #ccc;
+  color: #333;
+}
+
+#thankBox button:hover {
+  background: #aaa;
+}
+
+/* HIỆU ỨNG */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- FORM -->
+  <form id="feedbackForm">
+
+    <h1>Đóng góp ý kiến</h1>
+    <p>Hãy chia sẻ cảm nghĩ của bạn về Bình Định</p>
+
+    <label>Email phản hồi</label>
+    <input type="email" name="email" placeholder="example@gmail.com" required>
+
+    <label>Nội dung góp ý</label>
+    <textarea name="message" rows="4" placeholder="Nhập ý kiến của bạn..." required></textarea>
+
+    <button type="submit">📩 Gửi ý kiến</button>
+  </form>
+
+  <!-- CẢM ƠN -->
+  <div id="thankBox">
+    <h3>🙏 Cảm ơn bạn đã đóng góp ý kiến!</h3>
+    <p>Ý kiến của bạn đã được gửi thành công.</p>
+    <button onclick="goBack()">Cancel</button>
+  </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("feedbackForm");
+  const thankBox = document.getElementById("thankBox");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/mqarbooj", {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (res.ok) {
+        form.style.display = "none";
+        thankBox.style.display = "block";
+      } else {
+        alert("Formspree chưa kích hoạt hoặc gửi lỗi!");
+      }
+    } catch (err) {
+      alert("Không kết nối được server!");
+    }
+  });
+});
+
+function goBack() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
