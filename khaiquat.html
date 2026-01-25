@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Thông Tin Chung</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f6f8;
+  line-height:1.7;
+}
+
+/* MENU */
+nav{
+  background:#0b5f4a;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+nav ul li{
+  flex:1;
+  text-align:center;
+}
+
+nav ul li a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:14px 16px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  border-radius:6px;
+  white-space:nowrap;
+}
+
+nav ul li a:hover{
+  background:#0f7c60;
+}
+
+/* BANNER */
+.banner{
+  width:100%;
+  height:380px;
+  background:url("banner2.jpg") center 30% / cover no-repeat;
+  position:relative;
+}
+
+.banner-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.banner h1{
+  color:white;
+  font-size:46px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-shadow:0 4px 10px rgba(0,0,0,0.8);
+}
+
+.banner h1 span{
+  display:block;
+  font-size:28px;
+  font-weight:600;
+  margin-top:8px;
+  letter-spacing:2px;
+}
+
+/* BỐ CỤC */
+.main{
+  display:flex;
+  max-width:1200px;
+  margin:30px auto;
+  gap:20px;
+}
+
+/* NỘI DUNG */
+.container{
+  width:72%;
+  background:white;
+  padding:35px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1{
+  text-align:center;
+  color:#0b5f4a;
+  margin-bottom:40px;
+  font-size:28px;
+}
+
+h2{
+  color:#0f7c60;
+  margin-top:40px;
+  font-size:22px;
+  border-left:4px solid #0f7c60;
+  padding-left:10px;
+}
+
+p{
+  color:#333;
+  font-size:16px;
+  text-align:justify;
+}
+
+.container img{
+  display:block;
+  max-width:100%;
+  margin:20px auto;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* QUẢNG CÁO */
+.ads{
+  width:28%;
+  position:sticky;
+  top:80px;
+  height:fit-content;
+}
+
+.ads .box{
+  height:260px;
+  margin-bottom:20px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.ads img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  background:
+    linear-gradient(rgba(11,95,74,0.85), rgba(11,95,74,0.85)),
+    url("anhfooter.jpg") center/cover no-repeat;
+  color:#fff;
+}
+
+.footer-content{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:30px;
+}
+
+.footer-content h3{
+  margin-bottom:15px;
+  color:#ffd966;
+}
+
+.footer-content p,
+.footer-content a{
+  font-size:14px;
+  color:#eee;
+  text-decoration:none;
+}
+
+.footer-bottom{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+  <div class="banner-overlay">
+    <h1>BÌNH ĐỊNH<br><span>ĐẤT VÕ TRỜI VĂN</span></h1>
+  </div>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+    <li><a href="khaiquat.html"><i class="fa-solid fa-circle-info"></i>Thông tin</a></li>
+    <li><a href="lichsu.html"><i class="fa-solid fa-landmark"></i>Lịch sử</a></li>
+    <li><a href="vanhoa.html"><i class="fa-solid fa-masks-theater"></i>Văn hóa</a></li>
+    <li><a href="truyenthong.html"><i class="fa-solid fa-drum"></i>Truyền thống</a></li>
+    <li><a href="diadanh.html"><i class="fa-solid fa-location-dot"></i>Địa danh</a></li>
+    <li><a href="connguoi.html"><i class="fa-solid fa-user-group"></i>Con người</a></li>
+    <li><a href="amthuc.html"><i class="fa-solid fa-utensils"></i>Ẩm thực</a></li>
+    <li><a href="kinhte.html"><i class="fa-solid fa-chart-line"></i>Kinh tế</a></li>
+    <li><a href="dinhhuong.html"><i class="fa-solid fa-bullseye"></i>Định hướng</a></li>
+  </ul>
+</nav>
+
+<div class="main">
+
+<div class="container">
+
+<h1>THÔNG TIN CHUNG </h1>
+
+<h2>📍Vị trí địa lí</h2>
+<p>Bình Định là một tỉnh ven biển thuộc vùng Duyên hải Nam Trung Bộ của Việt Nam. Tỉnh nằm ở vị trí trung tâm của khu vực, giữ vai trò là cầu nối quan trọng giữa Tây Nguyên và vùng duyên hải miền Trung. Phía Bắc Bình Định giáp tỉnh Quảng Ngãi, phía Nam giáp tỉnh Phú Yên, phía Tây giáp tỉnh Gia Lai và phía Đông giáp Biển Đông với đường bờ biển dài và nhiều vũng, vịnh đẹp.</p>
+
+<img src="anh1.jpg">
+
+<p>Nhờ vị trí địa lí thuận lợi, Bình Định có điều kiện phát triển đa dạng các lĩnh vực như kinh tế biển, du lịch, giao thương và dịch vụ. Hệ thống giao thông của tỉnh khá hoàn chỉnh với quốc lộ, đường sắt Bắc – Nam, cảng biển và sân bay, tạo điều kiện thuận tiện cho việc kết nối với các tỉnh, thành phố lớn trong cả nước. Vị trí địa lí đặc biệt này không chỉ góp phần thúc đẩy sự phát triển kinh tế – xã hội của Bình Định mà còn làm tăng vai trò chiến lược của tỉnh trong khu vực Nam Trung Bộ và Tây Nguyên.</p>
+
+<h2>📐 Diện tích – Dân số tỉnh Bình Định</h2>
+<p>Bình Định là một tỉnh ven biển thuộc khu vực Duyên hải Nam Trung Bộ của Việt Nam, có diện tích tự nhiên khoảng 6.066 km². Với địa hình đa dạng gồm núi, đồng bằng và vùng biển, Bình Định có nhiều điều kiện thuận lợi để phát triển nông nghiệp, ngư nghiệp, công nghiệp và du lịch.</p>
+
+<p>Tỉnh hiện có dân số khoảng 1,5 triệu người, phân bố không đồng đều giữa khu vực thành thị và nông thôn. Người dân Bình Định nổi tiếng với tính cách cần cù, chịu khó, thẳng thắn và nghĩa tình, góp phần tạo nên bản sắc văn hóa riêng của vùng đất võ.</p>
+
+<p>Trung tâm chính trị, kinh tế và văn hóa của tỉnh là thành phố Quy Nhơn – một đô thị ven biển năng động, đang ngày càng phát triển và thu hút du khách trong và ngoài nước.</p>
+
+<h2>🏛️ Đơn vị hành chính tỉnh Bình Định</h2>
+<p>Bình Định là một tỉnh có hệ thống đơn vị hành chính tương đối hoàn chỉnh và ổn định. Hiện nay, tỉnh được chia thành 11 đơn vị hành chính cấp huyện, bao gồm 1 thành phố, 2 thị xã và 8 huyện, đáp ứng tốt yêu cầu quản lý và phát triển kinh tế – xã hội.</p>
+
+<p>Thành phố Quy Nhơn là trung tâm hành chính, chính trị, kinh tế và văn hóa của tỉnh, đồng thời là đô thị ven biển quan trọng của khu vực Nam Trung Bộ.</p>
+
+<p>Bên cạnh đó, Bình Định còn có 2 thị xã là An Nhơn và Hoài Nhơn, giữ vai trò là các trung tâm kinh tế – thương mại của từng khu vực trong tỉnh.</p>
+
+<p>8 huyện còn lại gồm: Tuy Phước, Phù Cát, Phù Mỹ, Tây Sơn, An Lão, Hoài Ân, Vân Canh và Vĩnh Thạnh. Các huyện này có thế mạnh về nông nghiệp, lâm nghiệp, ngư nghiệp và đang từng bước phát triển du lịch sinh thái, du lịch văn hóa.</p>
+
+<p>Sự phân chia đơn vị hành chính hợp lý đã tạo điều kiện thuận lợi cho Bình Định trong công tác quản lý, phát triển kinh tế – xã hội và nâng cao đời sống của người dân.</p>
+
+<img src="anh2.jpg">
+
+</div>
+
+<div class="ads">
+  <div class="box"><img id="ad1" src="anh11.jpg"></div>
+  <div class="box"><img id="ad2" src="anh22.jpg"></div>
+</div>
+
+</div>
+
+<script>
+const ads1=["anh11.jpg","anh3.jpg","anh5.jpg"];
+const ads2=["anh22.jpg","anh4.jpg","anh6.jpg"];
+let i=0;
+setInterval(()=>{
+  i=(i+1)%ads1.length;
+  ad1.src=ads1[i];
+  ad2.src=ads2[i];
+},3000);
+</script>
+
+<footer>
+  <div class="footer-content">
+    <div>
+      <h3>Bình Định</h3>
+      <p>Vùng đất võ – trời văn, nơi hội tụ truyền thống lịch sử hào hùng và khát vọng phát triển hiện đại.</p>
+    </div>
+    <div>
+      <h3>Liên kết nhanh</h3>
+      <p><a href="index.html">Trang chủ</a></p>
+      <p><a href="lichsu.html">Lịch sử</a></p>
+      <p><a href="vanhoa.html">Văn hóa</a></p>
+      <p><a href="amthuc.html">Ẩm thực</a></p>
+    </div>
+    <div>
+      <h3>Liên hệ</h3>
+      <p>📍 Quy Nhơn – Bình Định</p>
+      <p>📞 0123 456 789</p>
+      <p>✉️ binhdinh@example.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Bình Định | Thiết kế bởi Tổ 1
+  </div>
+</footer>
+
+</body>
+</html>

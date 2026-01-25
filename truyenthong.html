@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Truyền Thống</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f6f8;
+  line-height:1.7;
+}
+
+/* MENU */
+nav{
+  background:#0b5f4a;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+nav ul li{
+  flex:1;
+  text-align:center;
+}
+
+nav ul li a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:14px 16px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  border-radius:6px;
+  white-space:nowrap;
+}
+
+nav ul li a:hover{
+  background:#0f7c60;
+}
+
+/* BANNER */
+.banner{
+  width:100%;
+  height:380px;
+  background:url("banner2.jpg") center 30% / cover no-repeat;
+  position:relative;
+}
+
+.banner-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.banner h1{
+  color:white;
+  font-size:46px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-shadow:0 4px 10px rgba(0,0,0,0.8);
+}
+
+.banner h1 span{
+  display:block;
+  font-size:28px;
+  font-weight:600;
+  margin-top:8px;
+  letter-spacing:2px;
+}
+
+/* BỐ CỤC */
+.main{
+  display:flex;
+  max-width:1200px;
+  margin:30px auto;
+  gap:20px;
+}
+
+/* NỘI DUNG */
+.container{
+  width:72%;
+  background:white;
+  padding:35px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1{
+  text-align:center;
+  color:#0b5f4a;
+  margin-bottom:40px;
+  font-size:28px;
+}
+
+h2{
+  color:#0f7c60;
+  margin-top:40px;
+  font-size:22px;
+  border-left:4px solid #0f7c60;
+  padding-left:10px;
+}
+
+p{
+  color:#333;
+  font-size:16px;
+  text-align:justify;
+}
+
+.container img{
+  display:block;
+  max-width:100%;
+  margin:20px auto;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* QUẢNG CÁO */
+.ads{
+  width:28%;
+  position:sticky;
+  top:80px;
+  height:fit-content;
+}
+
+.ads .box{
+  height:260px;
+  margin-bottom:20px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.ads img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  background:
+    linear-gradient(rgba(11,95,74,0.85), rgba(11,95,74,0.85)),
+    url("anhfooter.jpg") center/cover no-repeat;
+  color:#fff;
+}
+
+.footer-content{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:30px;
+}
+
+.footer-content h3{
+  margin-bottom:15px;
+  color:#ffd966;
+}
+
+.footer-content p,
+.footer-content a{
+  font-size:14px;
+  color:#eee;
+  text-decoration:none;
+}
+
+.footer-bottom{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+  <div class="banner-overlay">
+    <h1>BÌNH ĐỊNH<br><span>ĐẤT VÕ TRỜI VĂN</span></h1>
+  </div>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+    <li><a href="khaiquat.html"><i class="fa-solid fa-circle-info"></i>Thông tin</a></li>
+    <li><a href="lichsu.html"><i class="fa-solid fa-landmark"></i>Lịch sử</a></li>
+    <li><a href="vanhoa.html"><i class="fa-solid fa-masks-theater"></i>Văn hóa</a></li>
+    <li><a href="truyenthong.html"><i class="fa-solid fa-drum"></i>Truyền thống</a></li>
+    <li><a href="diadanh.html"><i class="fa-solid fa-location-dot"></i>Địa danh</a></li>
+    <li><a href="connguoi.html"><i class="fa-solid fa-user-group"></i>Con người</a></li>
+    <li><a href="amthuc.html"><i class="fa-solid fa-utensils"></i>Ẩm thực</a></li>
+    <li><a href="kinhte.html"><i class="fa-solid fa-chart-line"></i>Kinh tế</a></li>
+    <li><a href="dinhhuong.html"><i class="fa-solid fa-bullseye"></i>Định hướng</a></li>
+  </ul>
+</nav>
+
+<div class="main">
+
+<div class="container">
+
+<h1>Truyền Thống </h1>
+ <h2>🔥 Truyền thống của người Bình Định</h2>
+ <p>Bình Định từ lâu đã được biết đến là vùng đất giàu truyền thống, nơi hội tụ những giá trị tốt đẹp được hun đúc qua lịch sử lâu dài. Truyền thống ấy không chỉ thể hiện trong các cuộc đấu tranh dựng nước và giữ nước, mà còn in đậm trong đời sống, tính cách và tinh thần của con người Bình Định.</p>
+ <p>Trong suốt chiều dài lịch sử, người dân Bình Định luôn nêu cao tinh thần yêu nước và ý chí quật cường. Từ phong trào Tây Sơn vang dội với người anh hùng áo vải Quang Trung – Nguyễn Huệ, đến các cuộc kháng chiến chống thực dân, đế quốc, Bình Định luôn là địa bàn cách mạng quan trọng. Truyền thống yêu nước ấy đã trở thành động lực tinh thần to lớn, thôi thúc các thế hệ đứng lên bảo vệ quê hương, đất nước.</p>
+ <h2>🥋 Truyền thống thượng võ</h2>
+ <p>Nhắc đến Bình Định là nhắc đến võ cổ truyền, một nét văn hóa đặc trưng nổi tiếng trong và ngoài nước. Võ Bình Định không chỉ rèn luyện sức khỏe mà còn đề cao đạo đức, tinh thần kỷ luật và lòng nhân ái. Truyền thống thượng võ đã góp phần tạo nên tính cách cứng cỏi, ngay thẳng và nghĩa khí của con người nơi đây.</p>
+ <img src="anh22.jpg">
+ <img src="anh23.jpg">
+ <h2>📚 Truyền thống hiếu học</h2>
+ <p>Bên cạnh tinh thần thượng võ, người Bình Định còn nổi bật với truyền thống hiếu học và trọng tri thức. Qua nhiều thế hệ, mảnh đất này đã sản sinh ra nhiều nhân tài, trí thức, đóng góp quan trọng cho sự phát triển của quê hương và đất nước. Ngày nay, truyền thống hiếu học vẫn được gìn giữ và phát huy thông qua sự quan tâm đến giáo dục và đào tạo nguồn nhân lực.</p>
+  <img src="anh1502.jpg">
+  <h2>🤝 Truyền thống nghĩa tình, đoàn kết</h2>
+  <p>Người Bình Định nổi tiếng với tính cách chân chất, thẳng thắn và giàu nghĩa tình. Trong cuộc sống, họ luôn đề cao tinh thần đoàn kết, sẵn sàng giúp đỡ lẫn nhau, nhất là trong những lúc khó khăn. Truyền thống ấy đã tạo nên sức mạnh cộng đồng bền vững và là nền tảng cho sự phát triển của tỉnh.</p>
+  <p>Truyền thống của Bình Định là sự kết tinh hài hòa giữa lịch sử hào hùng, văn hóa đặc sắc và con người nghĩa tình, tạo nên bản sắc riêng không thể trộn lẫn của vùng đất “địa linh nhân kiệt”.</p>
+</div>
+
+<div class="ads">
+  <div class="box"><img id="ad1" src="anh11.jpg"></div>
+  <div class="box"><img id="ad2" src="anh22.jpg"></div>
+</div>
+
+</div>
+
+<script>
+const ads1=["anh11.jpg","anh3.jpg","anh5.jpg"];
+const ads2=["anh22.jpg","anh4.jpg","anh6.jpg"];
+let i=0;
+setInterval(()=>{
+  i=(i+1)%ads1.length;
+  ad1.src=ads1[i];
+  ad2.src=ads2[i];
+},3000);
+</script>
+
+<footer>
+  <div class="footer-content">
+    <div>
+      <h3>Bình Định</h3>
+      <p>Vùng đất võ – trời văn, nơi hội tụ truyền thống lịch sử hào hùng và khát vọng phát triển hiện đại.</p>
+    </div>
+    <div>
+      <h3>Liên kết nhanh</h3>
+      <p><a href="index.html">Trang chủ</a></p>
+      <p><a href="lichsu.html">Lịch sử</a></p>
+      <p><a href="vanhoa.html">Văn hóa</a></p>
+      <p><a href="amthuc.html">Ẩm thực</a></p>
+    </div>
+    <div>
+      <h3>Liên hệ</h3>
+      <p>📍 Quy Nhơn – Bình Định</p>
+      <p>📞 0123 456 789</p>
+      <p>✉️ binhdinh@example.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Bình Định | Thiết kế bởi Tổ 1
+  </div>
+</footer>
+
+</body>
+</html>

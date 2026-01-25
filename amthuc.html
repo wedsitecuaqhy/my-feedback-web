@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Ẩm Thực</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f6f8;
+  line-height:1.7;
+}
+
+/* MENU */
+nav{
+  background:#0b5f4a;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+nav ul li{
+  flex:1;
+  text-align:center;
+}
+
+nav ul li a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:14px 16px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  border-radius:6px;
+  white-space:nowrap;
+}
+
+nav ul li a:hover{
+  background:#0f7c60;
+}
+
+/* BANNER */
+.banner{
+  width:100%;
+  height:380px;
+  background:url("banner2.jpg") center 30% / cover no-repeat;
+  position:relative;
+}
+
+.banner-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.banner h1{
+  color:white;
+  font-size:46px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-shadow:0 4px 10px rgba(0,0,0,0.8);
+}
+
+.banner h1 span{
+  display:block;
+  font-size:28px;
+  font-weight:600;
+  margin-top:8px;
+  letter-spacing:2px;
+}
+
+/* BỐ CỤC */
+.main{
+  display:flex;
+  max-width:1200px;
+  margin:30px auto;
+  gap:20px;
+}
+
+/* NỘI DUNG */
+.container{
+  width:72%;
+  background:white;
+  padding:35px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1{
+  text-align:center;
+  color:#0b5f4a;
+  margin-bottom:40px;
+  font-size:28px;
+}
+
+h2{
+  color:#0f7c60;
+  margin-top:40px;
+  font-size:22px;
+  border-left:4px solid #0f7c60;
+  padding-left:10px;
+}
+
+p{
+  color:#333;
+  font-size:16px;
+  text-align:justify;
+}
+
+.container img{
+  display:block;
+  max-width:100%;
+  margin:20px auto;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* QUẢNG CÁO */
+.ads{
+  width:28%;
+  position:sticky;
+  top:80px;
+  height:fit-content;
+}
+
+.ads .box{
+  height:260px;
+  margin-bottom:20px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.ads img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  background:
+    linear-gradient(rgba(11,95,74,0.85), rgba(11,95,74,0.85)),
+    url("anhfooter.jpg") center/cover no-repeat;
+  color:#fff;
+}
+
+.footer-content{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:30px;
+}
+
+.footer-content h3{
+  margin-bottom:15px;
+  color:#ffd966;
+}
+
+.footer-content p,
+.footer-content a{
+  font-size:14px;
+  color:#eee;
+  text-decoration:none;
+}
+
+.footer-bottom{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+  <div class="banner-overlay">
+    <h1>BÌNH ĐỊNH<br><span>ĐẤT VÕ TRỜI VĂN</span></h1>
+  </div>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+    <li><a href="khaiquat.html"><i class="fa-solid fa-circle-info"></i>Thông tin</a></li>
+    <li><a href="lichsu.html"><i class="fa-solid fa-landmark"></i>Lịch sử</a></li>
+    <li><a href="vanhoa.html"><i class="fa-solid fa-masks-theater"></i>Văn hóa</a></li>
+    <li><a href="truyenthong.html"><i class="fa-solid fa-drum"></i>Truyền thống</a></li>
+    <li><a href="diadanh.html"><i class="fa-solid fa-location-dot"></i>Địa danh</a></li>
+    <li><a href="connguoi.html"><i class="fa-solid fa-user-group"></i>Con người</a></li>
+    <li><a href="amthuc.html"><i class="fa-solid fa-utensils"></i>Ẩm thực</a></li>
+    <li><a href="kinhte.html"><i class="fa-solid fa-chart-line"></i>Kinh tế</a></li>
+    <li><a href="dinhhuong.html"><i class="fa-solid fa-bullseye"></i>Định hướng</a></li>
+  </ul>
+</nav>
+
+<div class="main">
+
+<div class="container">
+
+<h1>Ẩm Thực </h1>
+ <img src="anh35.jpg">
+<p>Ẩm thực Bình Định mang đậm dấu ấn của vùng đất duyên hải miền Trung, nơi giao thoa giữa biển cả và đồng bằng. Các món ăn nơi đây không quá cầu kỳ trong cách chế biến nhưng lại đậm đà hương vị, mộc mạc mà tinh tế, phản ánh rõ nét tính cách chân chất, giản dị của con người Bình Định.</p>
+<p>Một trong những nét đặc trưng nổi bật của ẩm thực Bình Định là sự hài hòa giữa vị mặn, ngọt và cay nhẹ. Người Bình Định thường sử dụng nguyên liệu tươi ngon, sẵn có tại địa phương như hải sản biển, gạo, rau xanh và các loại gia vị dân dã. Chính điều đó đã tạo nên những món ăn tuy đơn giản nhưng khó quên đối với thực khách.</p>
+ <img src="anh36.jpg">
+<p>Nhắc đến Bình Định, không thể không kể đến bánh xèo tôm nhảy, món ăn nổi tiếng với lớp bánh mỏng, giòn rụm, nhân tôm tươi vừa bắt lên còn giữ nguyên vị ngọt tự nhiên. Bánh được ăn kèm rau sống và nước chấm đặc trưng, tạo nên sự hòa quyện hấp dẫn giữa các hương vị.</p>
+<img src="anh37.jpg">
+<p>Bên cạnh đó, bún chả cá Quy Nhơn cũng là món ăn tiêu biểu, thể hiện rõ nét văn hóa ẩm thực vùng biển. Nước dùng thanh ngọt, chả cá dai thơm làm từ cá tươi, kết hợp cùng sợi bún mềm, mang đến cảm giác vừa dân dã vừa đậm đà bản sắc địa phương.</p>
+<img src="anh38.jpg">
+<p>Ngoài ra, Bình Định còn nổi tiếng với nhiều loại bánh truyền thống như bánh ít lá gai, bánh hồng Tam Quan, bánh tráng nước dừa, bánh tráng mè. Những món bánh này không chỉ xuất hiện trong bữa ăn hằng ngày mà còn gắn liền với các dịp lễ, Tết và sinh hoạt văn hóa của người dân, thể hiện sự khéo léo và tinh tế trong ẩm thực dân gian.</p>
+<p>Ẩm thực Bình Định không chỉ là sự thưởng thức hương vị mà còn là sự cảm nhận về văn hóa và con người nơi đây. Mỗi món ăn đều mang trong mình câu chuyện về vùng đất, về cuộc sống lao động cần cù và tấm lòng hiếu khách của người Bình Định, để lại ấn tượng sâu sắc trong lòng du khách khi có dịp ghé thăm.</p>
+</div>
+
+<div class="ads">
+  <div class="box"><img id="ad1" src="anh11.jpg"></div>
+  <div class="box"><img id="ad2" src="anh22.jpg"></div>
+</div>
+
+</div>
+
+<script>
+const ads1=["anh11.jpg","anh3.jpg","anh5.jpg"];
+const ads2=["anh22.jpg","anh4.jpg","anh6.jpg"];
+let i=0;
+setInterval(()=>{
+  i=(i+1)%ads1.length;
+  ad1.src=ads1[i];
+  ad2.src=ads2[i];
+},3000);
+</script>
+
+<footer>
+  <div class="footer-content">
+    <div>
+      <h3>Bình Định</h3>
+      <p>Vùng đất võ – trời văn, nơi hội tụ truyền thống lịch sử hào hùng và khát vọng phát triển hiện đại.</p>
+    </div>
+    <div>
+      <h3>Liên kết nhanh</h3>
+      <p><a href="index.html">Trang chủ</a></p>
+      <p><a href="lichsu.html">Lịch sử</a></p>
+      <p><a href="vanhoa.html">Văn hóa</a></p>
+      <p><a href="amthuc.html">Ẩm thực</a></p>
+    </div>
+    <div>
+      <h3>Liên hệ</h3>
+      <p>📍 Quy Nhơn – Bình Định</p>
+      <p>📞 0123 456 789</p>
+      <p>✉️ binhdinh@example.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Bình Định | Thiết kế bởi Tổ 1
+  </div>
+</footer>
+
+</body>
+</html>
